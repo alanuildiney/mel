@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ffff;
+    margin: 25px;
+    padding: 1rem 1rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gradient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    /* Gradiente do backgroung */
+    background: linear-gradient(45deg, #043cf5, #ec53e2f1, #fd1414);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;    
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+
+    25%{
+        background-position: 60% 90% ;
+    }
+    
+    50%{
+        background-position: 100% 50%;
+    }
+
+    75%{
+        background-position: 90% 40%;
+    }
+
+    100%{
+        background-position: 0% 60%;
+    }
+}
+
+h1{
+    text-align: center;
+}
+
+#texto{
+    color:#311d1d;
+    margin: 30px 0px 30px 0px;
+    font-style: italic;
+}
+
+#texto_2{
+    font-size: 25pt;
+    margin: 10px 0px 10px 0px;
+}
+
+#texto_3{
+    font-size: 24pt;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+#marca{   
+    font-family: 'Roboto';
+    margin: 30px;
+    padding: 10px;
+    font-size: 13pt;
+    opacity: 0.6;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+    font-family: 'Montserrat', 'Roboto';
+    user-select: none;
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 15px;
+}
+
+.countdown h1{
+    font-size: calc(10px + 8vw);
+    text-shadow: 0 0 10px  whitesmoke;
+    padding: 15px;
+}
+
+.countdown p{
+    text-align: center;
+}
+
+#cor {
+    font-style: italic;
+    color: #302e2ed2;
+}
+
+span{
+    font-style: italic;
+}
+
+@media (max-width: 700px) {
+
+    .text{
+        height: 85%;
+    }
+
+    .countdown{
+        width: 100%;        
+    }
+
+    #texto_2{
+        text-align: justify;
+    }
+}
