@@ -25,8 +25,9 @@ let x = setInterval(function() {
   // Mostra a seguinte mensagem quando o cronometro acabar
   if (distance <= 0) {
     clearInterval(x)
-    document.getElementById("texto_1").innerHTML = '<p><span>Parabéns, Mel</span></p>';
-    document.getElementById("countdown").innerHTML = '<h1>Feliz aniversário, Mel! Que seu dia seja repleto de muita dança, momentos incríveis na academia, deliciosos pratos de sushi e flores maravilhosas para alegrar ainda mais o seu dia. Que você continue espalhando essa energia contagiante por onde passa! 🎉🌸💃🍣💪</h1>';
+    document.getElementById("texto_1").innerHTML = ' ';
     document.getElementById("texto_2").innerHTML = ' ';
+    document.getElementById("countdown").innerHTML = '<p>Ela é flor do sol. Por si só é força, luz e amor. ☀️🌻</p>';
+    document.getElementById("texto_3").innerHTML = ' ';
   }
 }, 1000);
